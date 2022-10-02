@@ -18,7 +18,6 @@ class Game():
     def get_card(self):
         return self.deck.pop_card()
 
-    
     def ask_question(self,text: str):
         answer = input(text)
         if answer == "y":
