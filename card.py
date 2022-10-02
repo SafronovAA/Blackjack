@@ -1,6 +1,6 @@
 class Card():
 
-    def __init__(self, suit, rank, points) -> None:
+    def __init__(self, suit: str, rank: str, points: int) -> None:
         self.suit = suit
         self.rank = rank
         self.points = points
