@@ -26,3 +26,6 @@ class Deck():
                 point= int(rank)
             cards.append(Card(suit=suit, rank=rank, points=points))
         return cards
+    
+    def pop_card(self):
+        return self.cards.pop()
