@@ -12,12 +12,12 @@ class Player():
         self.cards.append(card)
 
     @property
-    def add_points(self, points: int):
-        self.points += points
-
-    @add_points.getter
-    def points(self):
+    def add_points(self):
         return self.points
+
+    @add_points.setter
+    def add_points(self, points: int):
+        self.points += int(points)
 
     def show_cards(self):
         return self.cards
