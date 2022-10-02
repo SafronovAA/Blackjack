@@ -19,4 +19,7 @@ class Player():
     def points(self):
         return self.points
 
+    def show_cards(self):
+        return self.cards
+
     
