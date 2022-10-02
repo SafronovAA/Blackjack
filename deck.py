@@ -23,9 +23,11 @@ class Deck():
             elif rank == 'туз':
                     points = 10
             else:
-                point= int(rank)
+                points= int(rank)
             cards.append(Card(suit=suit, rank=rank, points=points))
         return cards
     
     def pop_card(self):
         return self.cards.pop()
+
+    
