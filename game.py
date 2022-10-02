@@ -3,7 +3,7 @@ from deck import Deck
 
 class Game():
     def __init__(self) -> None:
-        self.player = self.add_player()
+        self.player = Player(name = "Artyom")
         self.deck = Deck()
         self.dealer = self.add_dealer()
 
@@ -18,7 +18,8 @@ class Game():
     def get_card(self):
         return self.deck.pop_card()
 
-    def ask_question(text: str):
+    
+    def ask_question(self,text: str):
         answer = input(text)
         if answer == "y":
             return True
@@ -26,9 +27,14 @@ class Game():
             return False
     
     def start_game(self):
+        print("Hello")
         answer = self.ask_question("Вы хотите начать игру?")
         if answer:
             self.player.add_card(self.deck.pop_card())
-            
+        cards = self.player.show_cards()
+
+        for card in cards:
+            print(card)
+
 
 
